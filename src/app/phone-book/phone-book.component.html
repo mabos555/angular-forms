@@ -1,0 +1,41 @@
+<!--
+    your goal is to create a simple form
+    that allows the user to enter in a first name,
+    last name, and phone number and there should be
+    a submit button.
+
+    once the submit button is pressed, the information
+    should be displayed in a list below
+    (automatically sorted by last name) along with all
+    the previous information that was entered.
+
+    when your application loads the input fields
+    (not the phone book list) should be prepopulated
+    iwth the following values already:
+
+    first name = Coder
+    last name = Byte
+    phone = 8885559999
+-->
+<div class="form-wrapper">
+    <form>
+        <div>
+            <label for="firstName">First Name</label>
+            <input type="text" name="firstName" id="firstName" class="userFirstName">
+        </div>
+        <div>
+            <label for="lastName">Last Name</label>
+            <input type="text" name="lastName" id="lastName" class="userLastName">
+        </div>
+        <div>
+            <label for="phoneNumber">Phone number</label>
+            <input type="tel" name="phoneNumber" id="phoneNumber" class="userphoneNumber">
+        </div>
+        <div>
+            <input type="submit" value="submit" class="submitButton">
+        </div>
+    </form>
+</div>
+<div class="informationTable">
+    Table of contacts should go here...
+</div>
