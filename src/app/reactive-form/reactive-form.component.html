@@ -5,5 +5,23 @@
   object below it.
 -->
 
-<br/> form goes here...
+<br/> please change the person as you wish:
+<form [formGroup]="form">
+    <div>
+        <label for="firstName">first name</label>
+        <input type="text" formControlName="firstname">
+    </div>
+    <div>
+        <label for="age">age</label>
+        <input type="number" formControlName="age">
+    </div>
+    <div>
+        <label for="lastName">last name</label>
+        <input type="text" formControlName="lastname">
+    </div>
+    <div>
+        <label for="twitter">twitter</label>
+        <input type="text" formControlName="twitter">
+    </div>
+</form>
 <pre>{{form.value | json}}</pre>
